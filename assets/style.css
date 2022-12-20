@@ -8,6 +8,10 @@
     font-family: 'Roboto', sans-serif;
 }
 
+body {
+    background-color: rgba(211, 211, 211, 0.068);
+}
+
 .container {
     height: 100vh;
     width: 100vw;
@@ -18,6 +22,9 @@
 
 .logo {
     text-align: center;
+}
+.login-area, .sign-up {
+    background-color: white;
 }
 
 .form-main {
@@ -111,20 +118,144 @@ a:hover {
     display: flex;
     margin-top: 15px;
     width: 100%;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .plataformas img {
-    width: 50%;
+    width: 150px;
     cursor: pointer;
     transition: .3s ease;
 }
 
 .plataformas img:nth-child(1) {
-    margin-right: 10px;
+    margin-right: 5px;
 }
 
 .plataformas img:hover {
     transform: scale(1.1);
     transition: .3s ease;
+}
+
+.images {
+    display: none;
+}
+
+.footer {
+    text-align: center;
+    font-size: 0.85em;
+    color: rgb(175, 175, 175);
+    line-height: 2em;
+}
+.footer a {
+    color: rgb(175, 175, 175);
+    text-decoration: none;
+    margin: 8px;
+}
+.footer a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (min-width: 850px) {
+    
+    .container {
+        background-color: transparent;
+        flex-direction: row;
+        justify-content: center;
+        justify-self: center;
+        width: 100%;
+        height: 90%;
+        margin-top: 70px;
+    }
+
+    .form-container {
+        margin-left: 15px;
+        margin-top: 15px;
+    }
+
+    .login-area {
+        width: 350px;
+        padding-bottom: 20px;
+        border: 1px solid lightgray;
+    }
+
+    .sign-up {
+        border: 1px solid lightgray;
+        padding: 20px;
+        margin-top: 15px;
+    }
+    .bottom {
+        margin-top:10px;
+    }
+
+    .images {
+        display: inline-block;
+        width: 441px;
+        height: 700px;
+        background: url(images/phones.png) no-repeat center center;
+        background-size: cover;
+    }
+
+    .images img {
+        width: 275px;
+        position: absolute;
+        translate: 50% 5%;
+    }
+
+   
+}
+
+@media screen and (max-width: 850px) {
+    .images {
+        display: none;
+    }
+
+    .form-container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .login-area {
+        width: 50%;
+        margin: 0 auto;
+        padding-bottom: 20px;
+        border: 1px solid lightgray;
+        justify-content: center;
+    }
+
+    .sign-up {
+        margin: 0 auto;
+        width: 50%;
+        border: 1px solid lightgray;
+        padding: 20px;
+        margin-top: 15px;
+    }
+    .bottom {
+        margin-top:10px;
+    }
+
+    .footer {
+        font-size: 0.7em;
+        padding: 0px 100px 0px 100px;
+        position: absolute;
+        translate: 0% -150%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .login-area, .sign-up{
+        width: 90%;
+        margin: 0;
+    }
+
+    .sign-up {
+        margin-top: 10px;
+    }
+
+    .footer {
+        padding: 0px 50px 0px 50px;
+    }
 }
