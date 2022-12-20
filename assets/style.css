@@ -1,0 +1,130 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 30px;
+}
+
+.logo {
+    text-align: center;
+}
+
+.form-main {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 30px;
+}
+
+.form-main input {
+    border: 1px solid lightgray;
+    border-radius: 3px;
+    padding: 13px 10px;
+    width: 90%;
+    margin: auto;
+}
+
+.form-main input::placeholder {
+    color: rgb(165, 165, 165);
+}
+
+input[type="submit"] {
+    background-color: rgb(70, 147, 248);
+    color: white;
+    font-weight: bold;
+    margin-top: 8px;
+    cursor: pointer;
+}
+
+.form-bottom {
+    text-align: center;
+    margin-top: 33px;
+}
+
+#facebook {
+    font-weight: bold;
+    color: rgb(0, 61, 141);
+    margin-bottom: 25px;
+}
+
+#facebook i {
+    font-size: 1.2em;
+}
+
+.form-bottom a {
+    text-decoration: none;
+    color: rgb(4, 76, 143);
+}
+
+.ou {
+    display: flex;
+    margin: auto;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.ou #texto {
+    margin: 0 10px 0 10px;
+    color: rgb(138, 137, 137);
+}
+
+.linha {
+    height: 1px;
+    background-color: rgb(209, 209, 209);
+    width: 135px;
+}
+
+.sign-up {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.sign-up a {
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(63, 143, 247);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.bottom {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.plataformas {
+    display: flex;
+    margin-top: 15px;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.plataformas img {
+    width: 50%;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.plataformas img:nth-child(1) {
+    margin-right: 10px;
+}
+
+.plataformas img:hover {
+    transform: scale(1.1);
+    transition: .3s ease;
+}
